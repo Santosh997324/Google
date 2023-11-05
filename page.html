@@ -1,0 +1,110 @@
+<html>
+<head>
+  <script src="page.js"></script>
+  <link rel="stylesheet" href="page.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+ 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body onload="startTime()" style="background-color: rgb(0, 238, 255);">
+<div class="fluid-container">
+
+  <div class="col-lg-12">
+  <div class="row mt-5">
+  
+  
+  <div class="col-lg-3 mb-5">
+    
+    <div class="col-lg-12" id="p1">
+    <p class="notes">
+     (+) Add Notes
+    </p>
+    <p>
+      <input type="search" class="form-control" id="d"/> 
+    </p>
+    <button class="btn btn-danger" onclick="button()">Add</button>
+
+    </div>
+  <div class="col-lg-12" id="count">
+    
+    <p> Countdown Timer</p>  
+    <div class="clock-input">
+      <input type="date" name="time-to" class="time-to" id="time-to" value=”” onchange="calcTime(this.value)"/>
+    </div>
+    <div class="row mt-1">
+      <div class="col-lg-3">
+         <p class="clock-day clock-timer"></p>
+         <p class="clock-label">Days</p>
+      </div>
+      
+      <div class="col-lg-3">
+        <p class="clock-hours clock-timer"></p>
+        <p class="clock-label">Hours</p>
+      </div>
+      
+      <div class="col-lg-3">
+        <p class="clock-minutes clock-timer"></p>
+        <p class="clock-label">Mint</p>
+      </div>
+      
+      <div class="col-lg-3">
+        <p class="clock-seconds clock-timer"></p>
+        <p class="clock-label">Sec</p>
+      </div>
+    </div>
+
+</div>
+
+  </div>  
+ 
+
+  
+  
+  <div class="col-lg-6 mt-1">
+    
+    <div class="col-lg-12 text-center" id="s">
+  
+      <form method="get" action="https://www.google.com/search?gs_ssp">
+          <input type="search" class="form-control" placeholder="type the URL" />
+         </form>
+        
+        
+  
+
+   <!-- Add font awesome icons -->
+   <p class="box">
+<a href="https://www.facebook.com/" ><i class="fa fa-facebook" style=" font-size: 5vh;"></i></a>
+<a href="https://twitter.com/i/flow/login?input_flow_dat" ><i class="fa fa-twitter" style="font-size: 5vh ;"></i></a>
+<a href="https://www.google.com/" ><i class="fa fa-google" style="font-size:  5vh;"></i></a>
+</p>
+<p class="box">
+<a href="https://www.linkedin.com/feed/" ><i class="fa fa-linkedin" style="font-size:  5vh;"></i></a>
+<a href="https://www.youtube.com/watch?v=" ><i  class="fa fa-youtube" style="font-size:  5vh;"></i></a>
+<a href="https://mail.google.com/mail" ><i class="fa fa-envelope" style="font-size: 5vh"></i></a>
+</p>
+<p class="box">
+<a href="https://www.instagram.com/" ><i class="fa fa-instagram" style="font-size:  5vh;"></i></a>
+
+<a href="https://www.google.com/search?q=snapchat&rlz=" > <i class="fa fa-snapchat-ghost" style="font-size:  5vh;"></i></a>
+<a href="https://www.skype.com/en/" ><i class="fa fa-skype" style="font-size:  5vh;"></i></a>
+</p>
+
+<a href="https://web.whatsapp.com/" ><i class="fa fa-whatsapp" style="font-size: 5vh;"></i></a>
+
+
+</div>
+  </div>
+
+  <div class="col-lg-3 mb-2" >
+    <div class="col-lg-12 text-center" id="box1" >
+      <h2 class="p">Time</h2>
+  
+  <p id="txt"></p> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
